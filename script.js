@@ -40,6 +40,21 @@ const reset = () => {
   cVal = 0;
 };
 
+const keys = (e) => {
+  e.preventDefault();
+  if (e.key === "+") {
+    add();
+  }
+  if (e.key === "-") {
+    minus();
+  }
+  if (e.ctrlKey && e.key === "r") {
+    reset();
+  }
+};
 addBtn.addEventListener("click", add);
 minBtn.addEventListener("click", minus);
 resetbtn.addEventListener("click", reset);
+
+window.addEventListener("keydown", keys);
+
