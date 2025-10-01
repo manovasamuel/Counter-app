@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Counter App</title>
-
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="todo.css" />
+    <script defer src="todo.js"></script>
+    <title>To-do-list</title>
   </head>
   <body>
-    <div class="counter-container">
-      <h1>Counter App</h1>
-      <button class="btn-minus">-</button>
-      <span class="c-Val" id="counter">0</span>
-      <button class="btn-plus">+</button><br />
-      <button class="rst">Reset</button>
+    <h1>To-do-list</h1>
+    <div class="todo_container">
+      <div id="customAlert" class="custom-alert"></div>
+      <div class="top-conatiner">
+        <input type="text" class="input_val" placeholder="Enter your Task" />
+        <button class="addbtn">+</button>
+      </div>
+      <div class="list_container">
+        <ul></ul>
+      </div>
+      <div class="bottom-container">
+        <button class="clear">Clear</button>
+      </div>
     </div>
   </body>
 </html>
