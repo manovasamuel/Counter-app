@@ -1,136 +1,55 @@
 body {
+  background-image: linear-gradient(#000, #202020);
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-image: linear-gradient(#960000, #ff0000);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
-  color: white;
-  font-size: 4rem;
-  font-weight: 700;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding: 4px;
+  font-size: 80px;
+  text-shadow: 0 0 18px #fff;
 }
-.top-conatiner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-.input_val {
-  flex-grow: 1;
-  padding: 10px 15px;
-  font-size: 1.1rem;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  outline: none;
-  transition: border-color 0.3s ease;
+.counter-container {
+  background-image: linear-gradient(to bottom, #2c2c2c, #404040);
+  width: 50%;
+  padding: 55px;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  box-shadow: 0 0 15px #fff;
+  text-align: center;
 }
 
-.input_val:focus {
-  border-color: #00a398;
+.c-Val {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding: 4px;
+  text-shadow: 0 0 18px #fff;
+}
+.c-Val-p {
+  font-size: 80px;
+  color: #62d28f;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding: 4px;
+  text-shadow: 0 0 15px #62d28f;
 }
 
-.addbtn {
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  background-color: #00a398;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.c-Val-n {
+  font-size: 80px;
+  color: #ea4c46;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  padding: 4px;
+  text-shadow: 0 0 15px #ea4c46;
 }
-.todo_container {
-  position: relative; /* Required for positioning the custom alert */
-  background-image: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
-  border-radius: 12px;
-  padding: 50px;
-  border: 3px solid #00a398;
-  box-shadow: 0 0 25px #00a398;
-}
-.custom-alert {
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ff5c5c;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 100;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.custom-alert.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(1px);
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: flex;
-  align-items: center;
+button {
   background-color: #fff;
-  padding: 12px 15px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-li label {
-  flex-grow: 1;
-  margin: 0 12px;
-  font-size: 1.1rem;
-  color: #333;
-}
-
-li button {
-  background-color: #ff5c5c;
-  color: white;
-  border: none;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
-}
-
-.checked {
-  text-decoration: line-through;
-  color: #888;
-}
-
-.bottom-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.clear {
-  background-color: #fdf667;
-  color: #000;
-  margin: 10px;
   border: none;
   padding: 15px 30px;
   margin: 10px;
@@ -138,6 +57,13 @@ li button {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  box-shadow: 0 0 15px #ffff;
+  box-shadow: 0 0 15px #fff;
   margin: 8px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+button:active {
+  background-color: #bbb;
 }

@@ -57,4 +57,3 @@ minBtn.addEventListener("click", minus);
 resetbtn.addEventListener("click", reset);
 
 window.addEventListener("keydown", keys);
-
